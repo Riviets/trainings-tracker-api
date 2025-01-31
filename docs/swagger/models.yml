@@ -1,0 +1,56 @@
+components:
+  schemas:
+    Training:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: The unique identifier for the training session
+        type:
+          type: string
+          description: The type of training (e.g., Running, Yoga)
+        date:
+          type: string
+          format: date
+          description: The date of the training session
+        duration:
+          type: integer
+          description: The duration of the training session in minutes
+        calories_burnt:
+          type: integer
+          description: The number of calories burnt during the session
+        createdAt:
+          type: string
+          format: date-time
+          description: The date and time the training was created
+        updatedAt:
+          type: string
+          format: date-time
+          description: The date and time the training was last updated
+
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: The unique identifier for the user
+        username:
+          type: string
+          description: The username of the user
+        age:
+          type: integer
+          description: The age of the user
+        weight:
+          type: number
+          description: The weight of the user
+        height:
+          type: number
+          description: The height of the user
+        createdAt:
+          type: string
+          format: date-time
+          description: The date and time the user was created
+        updatedAt:
+          type: string
+          format: date-time
+          description: The date and time the user was last updated

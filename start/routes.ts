@@ -12,6 +12,7 @@ Route.post('/trainings', 'TrainingsController.store')
 Route.get('/trainings/:id', 'TrainingsController.show')
 Route.put('/trainings/:id', 'TrainingsController.update')
 Route.delete('/trainings/:id', 'TrainingsController.destroy')
+Route.get('/trainings/user/:userId', 'TrainingsController.findByUser')
 
 Route.get('/', async () => {
   return { hello: 'world' }
